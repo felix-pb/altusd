@@ -104,6 +104,10 @@ should make it configurable. That said, tracing-subscriber sets up well for that
 - Better testing! Right now, there are no tests except for the simple websocket
 client. All the core business logic for the engine is in the library (`lib.rs`),
 so that's where I would start adding some tests.
+- As mentioned above, we could batch the updates for a time period, and even
+make it configurable.
+- Right now, we only serve the index price with a Unix timestamp. However, it
+would trivial to add more metadata (e.g. market price on each exchange).
 
 [1]: https://help.ftx.com/hc/en-us/articles/360027668812-Index-Calculation
 [2]: https://www.coinbase.com/api/v2/assets/search
